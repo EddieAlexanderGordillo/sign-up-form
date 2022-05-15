@@ -1,5 +1,7 @@
-export const input = (errorLabel) =>
+const Input = (errorLabel = 'this input') =>
   `<div class="">
-    <input />
-    <label>${errorLabel} cannot be empty</label>
-  </div>`;
+      <input class=""/>
+      <label>${errorLabel} cannot be empty</label>
+    </div>`;
+
+export default Input;
