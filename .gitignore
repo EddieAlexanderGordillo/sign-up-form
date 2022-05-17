@@ -20,4 +20,3 @@ node_modules
 
 # Avoid upload dist folder
 dist
-package-lock.json
