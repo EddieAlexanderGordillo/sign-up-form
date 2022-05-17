@@ -14,22 +14,27 @@ module.exports = {
     },
 
     module: {
-        rules: [{
-            test: /\.js?$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
+        rules: [
+            {
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
 
-            }
-        }]
-    },
-    module: {
-        rules: [{
-            test: /\.css$/i,
-            use: ["css-loader"],
+                }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
 
-        },],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+        ]
     },
+
 
     plugins: [
         new HTMLWebpackPlugin({
@@ -41,6 +46,12 @@ module.exports = {
             patterns: [{
                 from: './src/styles/styles.css',
                 to: ''
+            }, {
+                from: './src/styles/desktop.css',
+                to: ''
+            }, {
+                from: './src/assets/images',
+                to: 'assets/images'
             }],
         })
     ]
