@@ -4,4 +4,26 @@
         height: 100vh;
         background-image: url('../assets/images/bg-intro-desktop.png');
     }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    section {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .promo {
+        width: 90%;
+        margin: 150px auto 30px;
+        align-content: flex-start;
+    }
+
+    .promo__text {
+        padding: 20px auto;
+    }
+
 }
