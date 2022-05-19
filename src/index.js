@@ -1,9 +1,13 @@
-import Input from './components/input/Input';
+import PromoSection from './components/PromoSection/PromoSection';
+import InfoSection from './components/InfoSection/InfoSection';
+
+import './styles/styles.css';
+import './styles/desktop.css'
 
 window.addEventListener('load', () => {
 
-    const form = document.getElementById('form');
+    const main = document.getElementById('main');
 
-    form.insertAdjacentHTML('beforeEnd', Input('first name'));
-    form.insertAdjacentHTML('beforeEnd', Input('last name'));
+    main.insertAdjacentHTML('beforeEnd', InfoSection());
+    main.insertAdjacentHTML('beforeEnd', PromoSection());
 });
