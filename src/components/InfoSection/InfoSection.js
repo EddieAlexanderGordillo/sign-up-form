@@ -1,7 +1,9 @@
 const InfoSection = () =>
   `<section class="info">
-    <h2></h2>
-    <p></p>
+      <div>
+        <h2>Learn to code by watching others</h2>
+        <p>See how expereienced developer solve problems in real-time. Watching scripted tutorials is great, but understanding how developers thinks is invaluable.</</p>
+      </div>
   </section>
 `;
 
