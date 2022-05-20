@@ -1,13 +1,14 @@
 :root {
     /*Primary*/
-    --Red: hsl(0, 100%, 74%);
-    --Green: hsl(154, 59%, 51%);
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
     /*Accent*/
-    --Blue: hsl(248, 32%, 49%);
+    --blue: hsl(248, 32%, 49%);
     /*Neutral*/
-    --DarkBlue: hsl(249, 10%, 26%);
-    --GrayishBlue: hsl(246, 25%, 77%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
     --boxShadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.2);
+    --primaryBorderRadius: 8px;
 }
 
 * {
@@ -25,11 +26,12 @@ html {
 main {
     width: 100%;
     height: 100vh;
-    background-color: var(--Red);
+    background-color: var(--red);
     background-image: url('../assets/images/bg-intro-mobile.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 30px;
 }
 
 .main {
@@ -66,21 +68,42 @@ main {
 
 
 .promo {
-    width: 90%;
-    margin: 40px auto;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .promo__text {
-    border-radius: 8px;
+    border-radius: var(--primaryBorderRadius);
     padding: 20px 30px;
     color: white;
     font-weight: 400;
     font-size: 1.4rem;
     text-align: center;
-    background-color: var(--Blue);
+    background-color: var(--blue);
     box-shadow: var(--boxShadow);
 }
 
 .promo__span {
     font-weight: 600;
+}
+
+
+.form-container {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: var(--primaryBorderRadius);
+    box-shadow: var(--boxShadow);
+}
+
+.disclaimer {
+    text-align: center;
+    color: var(--grayishBlue);
+    font-size: 1.0rem;
+}
+
+.disclaimer a {
+    color: var(--red);
+    font-weight: 700;
+    text-decoration: none;
 }
