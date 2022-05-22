@@ -1,7 +1,11 @@
 :root {
     /*Primary*/
     --red: hsl(0, 100%, 74%);
-    --green: hsl(154, 59%, 51%);
+    --redLight: hsl(2, 47%, 89%);
+    --green: hsl(154, 60%, 50%);
+    --greenLight: hsl(155, 64%, 67%);
+    --grenLightHover: hsl(155, 54%, 64%);
+    --greenSecundary: hsl(155, 50%, 47%);
     /*Accent*/
     --blue: hsl(248, 32%, 49%);
     /*Neutral*/
@@ -94,6 +98,25 @@ main {
     background-color: white;
     border-radius: var(--primaryBorderRadius);
     box-shadow: var(--boxShadow);
+}
+
+.btnForm {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 20px auto;
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    background-color: var(--green);
+    border: none;
+    border-bottom: 4px solid var(--greenSecundary);
+    border-radius: var(--primaryBorderRadius);
+}
+
+.btnForm:hover {
+    background-color: var(--greenLight);
+    border-bottom: 4px solid var(--grenLightHover);
 }
 
 .disclaimer {
