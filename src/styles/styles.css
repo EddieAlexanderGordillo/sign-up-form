@@ -100,7 +100,7 @@ main {
     box-shadow: var(--boxShadow);
 }
 
-.btnForm {
+.form_submit-button {
     width: 100%;
     font-size: 1.6rem;
     font-weight: 600;
@@ -114,7 +114,7 @@ main {
     border-radius: var(--primaryBorderRadius);
 }
 
-.btnForm:hover {
+.form_submit-button:hover {
     background-color: var(--greenLight);
     border-bottom: 4px solid var(--grenLightHover);
 }
