@@ -15,11 +15,7 @@ window.addEventListener('load', () => {
 
   const inputContainers = form.querySelectorAll('div.form__group');
   inputContainers.forEach((inputContainer) => {
-    console.log(inputContainers, 'AQUIIIII');
-    console.log(inputContainer, 'esetee');
-
     const input = inputContainer.querySelector('input');
-    console.log(input, 'ollll');
     input.addEventListener('keyup', () => {
       removeErrorClass(inputContainer);
     });
