@@ -1,7 +1,6 @@
 :root {
     /*Primary*/
     --red: hsl(0, 100%, 74%);
-    --redLight: hsl(2, 47%, 89%);
     --green: hsl(154, 60%, 50%);
     --greenLight: hsl(155, 64%, 67%);
     --grenLightHover: hsl(155, 54%, 64%);
@@ -29,7 +28,7 @@ html {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--red);
     background-image: url('../assets/images/bg-intro-mobile.png');
     background-size: cover;
@@ -104,7 +103,7 @@ main {
     width: 100%;
     font-size: 1.6rem;
     font-weight: 600;
-    margin: 20px auto;
+    margin: 5px auto;
     padding: 20px 10px;
     color: white;
     text-align: center;
@@ -129,4 +128,69 @@ main {
     color: var(--red);
     font-weight: 700;
     text-decoration: none;
+}
+
+/* input styles */
+.form__group {
+    margin: 0 0 20px 0;
+}
+
+.form__group-input {
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid lightgray;
+    border-radius: var(--primaryBorderRadius);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    transition: .3s ease all;
+}
+
+::placeholder {
+    color: var(--grayishBlue);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.form__input:focus {
+    border: 2px solid rgb(148, 148, 148);
+    outline: none;
+}
+
+.form__validation-status {
+    position: absolute;
+    height: 16px;
+    right: 30px;
+    bottom: 15px;
+    display: none;
+}
+
+.form__input-error {
+    font-size: 1rem;
+    margin-bottom: 0;
+    display: none;
+}
+
+.form__input--error input {
+    border: 2px solid var(--red);
+}
+
+.form__input--error img {
+    display: block;
+}
+
+.form__input--error ::placeholder {
+    color: transparent;
+}
+
+.form__input--error p {
+    color: var(--red);
+    display: block;
+    text-align: right;
+    margin: 5px 0 0 0;
+    font-style: italic;
 }
