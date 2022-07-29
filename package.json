@@ -1,38 +1,39 @@
 {
-    "name": "sign-up-form",
-    "version": "1.0.0",
-    "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack --mode production",
-        "start": "webpack-dev-server --open --mode development"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/EddieAlexanderGordillo/sign-up-form.git"
-    },
-    "keywords": [
-        "js",
-        "html",
-        "css",
-        "npm"
-    ],
-    "author": "Felipe Andrés López <felipeandreslopez91@gmail.com>, Eddie Alexander Gordillo <alexgordillo.g@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/EddieAlexanderGordillo/sign-up-form/issues"
-    },
-    "homepage": "https://github.com/EddieAlexanderGordillo/sign-up-form#readme",
-    "devDependencies": {
-        "@babel/core": "^7.17.10",
-        "babel-loader": "^8.2.5",
-        "copy-webpack-plugin": "^10.2.4",
-        "css-loader": "^6.7.1",
-        "html-webpack-plugin": "^5.5.0",
-        "style-loader": "^3.3.1",
-        "webpack": "^5.72.1",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.9.0"
-    },
-    "dependencies": {}
+  "name": "sign-up-form",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development",
+    "deploy": "npm run build && gh-pages -d dist -b main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddieAlexanderGordillo/sign-up-form.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "npm"
+  ],
+  "author": "Felipe Andrés López <felipeandreslopez91@gmail.com>, Eddie Alexander Gordillo <alexgordillo.g@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EddieAlexanderGordillo/sign-up-form/issues"
+  },
+  "homepage": "https://eddiealexandergordillo.github.io/sign-up-form",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
 }
