@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "deploy": "npm run build && gh-pages -d dist -b main"
+    "deploy": "npm run build && gh-pages -d dist -b gh-pages"
   },
   "repository": {
     "type": "git",
