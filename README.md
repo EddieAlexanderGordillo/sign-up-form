@@ -24,7 +24,7 @@ Form that allows the user:
 
 ### Links
 
-- Solution URL: [https://github.com/EddieAlexanderGordillo/sign-up-form]
+- Solution URL: [https://eddiealexandergordillo.github.io/sign-up-form/]
 
 ## My process
 
